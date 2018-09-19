@@ -1,13 +1,13 @@
 self.addEventListener('install', e => {
  e.waitUntil(
-   // после установки service worker
-   // открыть новый кэш
+   // ГЇГ®Г±Г«ГҐ ГіГ±ГІГ Г­Г®ГўГЄГЁ service worker
+   // Г®ГІГЄГ°Г»ГІГј Г­Г®ГўГ»Г© ГЄГЅГё
    caches.open('my-pwa-cache').then(cache => {
-     // добавляем все URL ресурсов, которые хотим закэшировать
+     // Г¤Г®ГЎГ ГўГ«ГїГҐГ¬ ГўГ±ГҐ URL Г°ГҐГ±ГіГ°Г±Г®Гў, ГЄГ®ГІГ®Г°Г»ГҐ ГµГ®ГІГЁГ¬ Г§Г ГЄГЅГёГЁГ°Г®ГўГ ГІГј
      return cache.addAll([
-       '/',
-       '/index.html',
-       '/style.css',
+       '/schedule',
+       '/schedule/index.html',
+       '/schedule/style.css',
      ]);
    })
  );
