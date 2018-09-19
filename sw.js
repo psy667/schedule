@@ -11,6 +11,7 @@ self.addEventListener('install', e => {
        '/schedule/script.js',
        'https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js',
        'https://unpkg.com/axios/dist/axios.min.js',
+       '/in171.json',
      ]);
    })
  );
