@@ -8,6 +8,9 @@ self.addEventListener('install', e => {
        '/schedule',
        '/schedule/index.html',
        '/schedule/style.css',
+       '/schedule/script.js',
+       'https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js',
+       'https://unpkg.com/axios/dist/axios.min.js',
      ]);
    })
  );
