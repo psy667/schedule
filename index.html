@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?4">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src='https://unpkg.com/vue-router/dist/vue-router.js'></script>
@@ -18,9 +18,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" sizes="192x192" href="logo.png">
   <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="logo.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="logo512.png">
-  <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="logo512.png">
-  <meta name="theme-color" content="#9080de"/>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -46,8 +43,9 @@ if ('serviceWorker' in navigator) {
   <div id='app'>
   <header>
 
-    <select class="group" name="" >
-      <option>ИН-171</option>
+    <select class="group" v-model='group'>
+      <option value='in171'>ИН-171</option>
+      <option value='is171'>ИС-171</option>
     </select>
 
     <select class="subGroup" v-model='subGroup'>
